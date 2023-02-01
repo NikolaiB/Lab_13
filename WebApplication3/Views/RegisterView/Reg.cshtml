@@ -1,9 +1,9 @@
-﻿
+﻿@model UserRegister
 @{
     ViewData["Title"] = "Registration";
 }
 
-<form asp-asp-controller="RegisterView" asp-controller="SubmitForm" method="post">
+<form asp-asp-controller="UserRegister" asp-action="Register" method ="post">
     <div>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" />

@@ -14,9 +14,9 @@ namespace WebApplication3.Controllers
         {
             return View();
         }
-        
 
-        public IActionResult Register(string name, int age, string email, string pass, string confPass)
+
+        public IActionResult Register([FromForm] string name, [FromForm] int age, [FromForm] string email, [FromForm] string pass, [FromForm] string confPass)
         {
             if (pass != confPass)
             {
